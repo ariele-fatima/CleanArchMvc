@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchMvc.Domain.Interfaces
 {
-    public interface ICategorytRepository
+    public interface ICategoryRepository
     {
         Task<IEnumerable<Category>> GetCategoriesAsync();
         Task<Category> GetByIdAsync(int? id);
