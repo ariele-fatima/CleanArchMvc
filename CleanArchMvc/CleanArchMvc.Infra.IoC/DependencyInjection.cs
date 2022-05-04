@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Application.Services;
 using CleanArchMvc.Application.Mappings;
+using System;
+using MediatR;
 
 namespace CleanArchMvc.Infra.IoC
 {
@@ -24,6 +26,9 @@ namespace CleanArchMvc.Infra.IoC
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+
+            var myhandlers = AppDomain.CurrentDomain.Load("CleanArchMvc.Application");
+            services.AddMediatR(myhandlers);
 
             return services;
         }
