@@ -1,5 +1,5 @@
 ﻿using CleanArchMvc.Domain.Account;
-using CleanArchMvc.WebUI.Models;
+using CleanArchMvc.WebUI.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
