@@ -338,3 +338,4 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/CleanArchMvc/CleanArchMvc.API/Controllers/CategoriesController.cs
